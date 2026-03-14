@@ -14,7 +14,7 @@
     <div class="mobile-app">
         <header class="header">
             <div class="category-nav">
-                <button class="active">Music</button>
+                <button>Music</button>
                 <button>Podcasts</button>
                 <button>Audiobooks</button>
             </div>
@@ -158,14 +158,14 @@
                                 alt="search-icon"></span>
                         <input type="text" placeholder="Search library">
                     </div>
-                    <span class="plus-icon">＋</span>
+                    <span class="plus-icon"><img src="./image/Name=Add Simple, Filled=No.png" alt="add"></span>
                 </div>
 
                 <div class="library-filters">
-                    <span class="filter-icon">≡</span>
+                    <span class="filter-icon"><img src="./image/filter.png" alt="filter"></span>
                     <button>Group</button>
                     <button>Recents</button>
-                    <span class="grid-icon">⊞</span>
+                    <span class="grid-icon"><img src="./image/Name=Grid, Filled=No.png" alt="grid-icon"></span>
                 </div>
 
                 <div class="library-list">
@@ -196,9 +196,14 @@
                     <div class="profile-top">
                         <img src="./image/image_14.png" alt="Avatar" class="avatar">
                         <div class="profile-info">
-                            <h2>Jux <span class="edit-icon">✎</span> <span class="share-icon">📤</span></h2>
+                            <h2>Jux
+                                <span class="edit-icon"><img src="./image/Name=Edit, Filled=No.png"
+                                        alt="edit-icon"></span>
+                                <span class="share-icon"><img src="./image/Name=Share, Filled=No.png"
+                                        alt="share-icon"></span>
+                            </h2>
                             <p>3 followers • 30 following</p>
-                            <p class="profile-id">31z6y5yn...</p>
+                            <p class="profile-id">31z6y5ynbcaogtsjzzpinxeue6xu</p>
                         </div>
                     </div>
                 </div>
@@ -235,13 +240,16 @@
 
                 <div class="settings-list">
                     <div class="setting-item">
-                        <span class="icon">🕒</span> <span>Listening history</span> <span class="arrow">›</span>
+                        <span class="icon"><img src="./image/Name=History, Filled=No.png" alt="header-icon"></span>
+                        <span>Listening history</span> <span class="arrow">›</span>
                     </div>
                     <div class="setting-item">
-                        <span class="icon">⚙️</span> <span>Settings and privacy</span> <span class="arrow">›</span>
+                        <span class="icon"><img src="./image/Name=Settings, Filled=No.png" alt="setting_icon"></span>
+                        <span>Settings and privacy</span> <span class="arrow">›</span>
                     </div>
                     <div class="setting-item">
-                        <span class="icon">🔔</span> <span>What's new</span> <span class="arrow">›</span>
+                        <span class="icon"><img src="./image/Name=News, Filled=No.png" alt="News"></span> <span>What's
+                            new</span> <span class="arrow">›</span>
                     </div>
                 </div>
             </section>
@@ -365,31 +373,31 @@
                     <div class="playlist-card">
                         <img src="./image/image_5.png">
                         <h3>Discover Weekly</h3>
-                        <p>Your weekly mixtape</p>
+                        <p>Your weekly mixtape of fresh music.</p>
                     </div>
 
                     <div class="playlist-card">
                         <img src="./image/image_3.png">
                         <h3>Daily Mix 1</h3>
-                        <p>Linkin Park</p>
+                        <p>Linkin Park, System Of A Down, Coal Chamber...</p>
                     </div>
 
                     <div class="playlist-card">
                         <img src="./image/image_2.png">
                         <h3>Daily Mix 2</h3>
-                        <p>Avril Lavigne</p>
+                        <p>Avril Lavigne, Lorde, Charli XCX and more</p>
                     </div>
 
                     <div class="playlist-card">
                         <img src="./image/image_4.png">
                         <h3>Daily Mix 3</h3>
-                        <p>Pop Mix</p>
+                        <p>The Strokes, Martin Garrix, MGMT and more</p>
                     </div>
 
                     <div class="playlist-card">
                         <img src="./image/image_6.png">
-                        <h3>Nirvana</h3>
-                        <p>Radio</p>
+                        <h3>Daily Mix 4</h3>
+                        <p>Chuck Berry, Elvis Presley, Roy Orbison and more</p>
                     </div>
 
                 </div>
@@ -406,25 +414,25 @@
                     <div class="playlist-card">
                         <img src="./image/image_4.png">
                         <h3>Rock Mix</h3>
-                        <p>RHCP</p>
+                        <p>Red Hot Chili Peppers, R.E.M., Guns N’ Roses...</p>
                     </div>
 
                     <div class="playlist-card">
                         <img src="./image/image_6.png">
                         <h3>Chill Mix</h3>
-                        <p>LoFi</p>
+                        <p>MF DOOM, Daft Punk, The Chainsmokers, and more</p>
                     </div>
 
                     <div class="playlist-card">
                         <img src="./image/image_2.png">
                         <h3>Pop Mix</h3>
-                        <p>Dua Lipa</p>
+                        <p>Red Hot Chili Peppers, R.E.M., Guns N’ Roses...</p>
                     </div>
 
                     <div class="playlist-card">
                         <img src="./image/image_3.png">
-                        <h3>Happy Mix</h3>
-                        <p>ABBA</p>
+                        <h3>Daft Punk Mix</h3>
+                        <p>Daft Punk, MGMT, Muse, and more</p>
                     </div>
 
                 </div>
@@ -435,23 +443,50 @@
 
 
         <div class="desktop-player">
+            <div class="player-controls-wrapper">
+                <button class="play-main">
+                    <div class="pause-icon">
+                        <span></span>
+                        <span></span>
+                    </div>
+                </button>
+                <div class="nav-icons">
+                    <img src="./image/Name=Prev, Filled=No.png" alt="prev">
+                    <img src="./image/Name=Next, Filled=No.png" alt="next">
+                    <img src="./image/Name=Shuffle, Filled=No.png" alt="shuffle">
+                    <img src="./image/Name=Loop, Filled=No.png" alt="repeat">
+                </div>
+                <div class="time-display">
+                    <span class="current-time">2:23</span>
+                    <div class="progress-bar">
+                        <div class="progress-fill"></div>
+                    </div>
+                    <span class="total-time">4:45</span>
+                </div>
+                <img src="./image/Name=Volume, Filled=No.png" alt="volume" class="vol-icon">
+            </div>
 
-            <div class="player-left">
-                <img src="./image/image_3.png">
-                <div>
+            <div class="player-track-info">
+                <img src="./image/image_1.png" alt="cover">
+                <div class="text">
                     <h4>Get Lucky</h4>
                     <p>Daft Punk</p>
+                    <p class="album-name">Random Access Memories</p>
                 </div>
             </div>
 
-            <div class="player-center">
-                ⏮ ▶ ⏭
+            <div class="player-extra-icons">
+                <img src="./image/Name=Like, Filled=No.png" alt="like">
+                <img src="./image/Property 1=Add to Playlist.png" alt="add">
+                <img src="./image/Name=Lyrics, Filled=No.png" alt="lyrics">
+                <img src="./image/Name=Device, Filled=No.png" alt="device">
+                <img src="./image/home-more.png" alt="more">
+                <div class="divider"></div>
+                <div class="ai-assist">
+                    <img src="./image/Property 1=Default.png" alt="queue">
+                </div>
+                <img src="./image/default.png" alt="queue">
             </div>
-
-            <div class="player-right">
-                🔊
-            </div>
-
         </div>
 
     </div>
