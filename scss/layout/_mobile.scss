@@ -1,18 +1,19 @@
+@use "../base/variables";
+
 .search-page {
     display: none;
 }
 
-// როცა Body-ს ექნება .search-active კლასი
 body.search-active {
 
     .header,
     .quick-grid,
     .scroll-section {
-        display: none; // იმალება მთავარი გვერდის სექციები
+        display: none;
     }
 
     .search-page {
-        display: block; // ჩნდება მხოლოდ სეარჩი
+        display: block;
     }
 }
 
@@ -246,7 +247,6 @@ body.search-active {
 }
 
 // --- PAGE TOGGLE LOGIC ---
-// როცა რომელიმე სხვა გვერდია აქტიური, ჰოუმის სექციები უნდა დაიმალოს
 body.search-active,
 body.library-active,
 body.me-active {
@@ -258,11 +258,11 @@ body.me-active {
     }
 }
 
-// თითოეული გვერდის გამოჩენის ლოგიკა
+
 .search-page,
 .library-page,
 .me-page {
-    display: none; // თავიდან ყველა დამალულია
+    display: none;
 }
 
 body.search-active .search-page {
@@ -288,11 +288,11 @@ body.me-active .me-page {
         .search-top-row {
             display: flex;
             align-items: center;
-            gap: 15px; // დაშორება ინპუტსა და კამერას შორის
+            gap: 15px;
             margin-bottom: 25px;
 
             .search-input-container {
-                flex: 1; // ინპუტი დაიკავებს მთელ დარჩენილ ადგილს
+                flex: 1;
                 display: flex;
                 align-items: center;
                 background: #242424;
@@ -334,14 +334,13 @@ body.me-active .me-page {
         }
     }
 
-    // Grid და ბარათების სტილი (იგივე რჩება)
     .category-grid {
         display: grid;
         grid-template-columns: 1fr 1fr;
         gap: 12px;
 
         .category-card {
-            height: 110px; // ოდნავ გავზარდეთ სკრინშოტის მიხედვით
+            height: 110px;
             border-radius: 8px;
             padding: 15px;
             position: relative;
@@ -360,11 +359,10 @@ body.me-active .me-page {
                 right: -22px;
                 bottom: -58px;
                 border-radius: 5px;
-                transform: rotate(30deg); // გადახრილი სურათის ეფექტი
+                transform: rotate(30deg);
                 box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
             }
 
-            // ფერები დიზაინის მიხედვით
             &.blue {
                 background-color: rgba(30, 50, 100, 1);
             }
@@ -377,7 +375,6 @@ body.me-active .me-page {
                 background-color: rgba(30, 50, 100, 1);
             }
 
-            // მაგალითისთვის
             &.purple {
                 background-color: rgba(141, 103, 171, 1);
             }
@@ -401,12 +398,10 @@ body.me-active .me-page {
     }
 }
 
-// თავიდან დამალვა
 .library-page {
     display: none;
 }
 
-// აქტიური მდგომარეობა
 body.library-active {
 
     .header,
@@ -482,7 +477,7 @@ body.library-active {
             justify-content: space-between;
             align-items: center;
             padding: 20px 0;
-            border-bottom: 0.5px solid #282828; // გამყოფი ხაზი
+            border-bottom: 0.5px solid #282828;
 
             span {
                 font-size: 22px;
